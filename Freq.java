@@ -1,5 +1,5 @@
 import java.util.*;
-class Repeat
+class Freq
 {
     public static void main(String args[])
     {
@@ -17,12 +17,12 @@ class Repeat
         }
         for(int i:ts)
         {
-            int n1=Collections.frequency(al,i);
-            if(n1>1)
+            if(Collections.frequency(al,i)==1)
             {
-                System.out.print(i+" ");
+                System.out.print(i);
             }
         }
+        
         
     }
 }
